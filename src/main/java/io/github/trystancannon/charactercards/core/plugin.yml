@@ -1,0 +1,23 @@
+name: CharacterCards
+main: io.github.trystancannon.charactercards.core.CharacterCards
+version: 1.0
+
+commands:
+    card:
+        description: Base card command.
+        permission: cards.base
+    c:
+        desription: Alias for /card.
+        usage: /<command> [sub command] [arguments ...]
+        permission: casds.base
+    
+permissions:
+    cards.base:
+        description: Allows basic usage of cards, i.e. setting the name/age/etc.
+        default: true
+    cards.reload:
+        description: Allows for reloading the plugin's config file.
+        default: op
+    cards.edit.other:
+        description: Admin permission which allows a player to edit another player's card
+        default: op
